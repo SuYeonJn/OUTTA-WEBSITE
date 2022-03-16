@@ -20,3 +20,16 @@ function myFunction() {
 }*/
 
 
+function fadeinout(mouse_location,old,pop){
+    $(mouse_location).hover(function(){
+        $(old).fadeOut(200,fadein(pop));
+},
+    function(){
+        $(pop).fadeOut(200,fadein(old));
+}
+)}
+
+$(document).ready(fadeinout(".main_1", "#pro","#pro2"))
+$(document).ready(fadeinout(".main_2", "#book","#book2"))
+$(document).ready(fadeinout(".main_3", "#file","#file2"))
+
