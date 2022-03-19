@@ -4,8 +4,10 @@
         <title> OUTTA </title>
         <meta charset="utf-8">
     </head>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="mainpage.js"></script>
+    <script src="mainpage.js"></script>
+
     <link rel="stylesheet" href="nav_footer.css">
     <link rel="stylesheet" href="mainpage.css">
     <body>  
@@ -13,8 +15,8 @@
         <header>
             <div class="navigation_c">
                 <ul class="left_nav">
-                    <li>로고</li>
-                    <li><a href="mainpage.html">OUTTA</a></li>
+                    <li><img src="Icon.png"></li>
+                    <li><a href="mainpage.html"><img src="outta.png"></a></li>
                 </ul>
                 <ul class="center_nav">
                     <li><a href="whoweare.html">WHO WE ARE</a></li>
@@ -23,7 +25,7 @@
                 </ul>
                 <ul  class="right_nav">
                     <li style=" border-right: 2px solid #C6C6C6; 
-                    padding-right:40px;  
+                    padding-right:30px;  
                     height: 24px;">LOGIN</li> 
                     <li>JOIN</li>
                 </ul>
@@ -172,13 +174,14 @@
                 })
             });*/
           
-
+   
             function fadein(img_src){
                     $(img_src).fadeIn();
                 }
             function fadeout(img_src){
                 $(img_src).fadeOut();
             }
+            
 
             /*
             $(document).ready(function(){
@@ -207,7 +210,7 @@
                 })
             })*/
 
-            
+         
             function fadeinout(mouse_location,old,pop){
                 $(mouse_location).hover(function(){
                     $(old).fadeOut(200,fadein(pop));
